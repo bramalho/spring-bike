@@ -13,3 +13,11 @@ Running the application
 ```shell
 mvn spring-boot:run
 ```
+
+Frontend application
+
+```shell
+cd app
+yarn
+yarn start
+```
