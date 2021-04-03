@@ -24,6 +24,8 @@ public class Bike {
 
     private String phone;
 
+    private String model;
+
     private String serialNumber;
 
     private BigDecimal purchasePrice;
@@ -63,6 +65,14 @@ public class Bike {
 
     public void setPhone(String phone) {
         this.phone = phone;
+    }
+
+    public String getModel() {
+        return model;
+    }
+
+    public void setModel(String model) {
+        this.model = model;
     }
 
     public String getSerialNumber() {

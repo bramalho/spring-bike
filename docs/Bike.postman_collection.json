@@ -33,7 +33,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"name\": \"Bike Four\",\n    \"email\": \"bike4@bikes.com\",\n    \"phone\": \"123 123 123\",\n    \"serialNumber\": \"44444\",\n    \"purchasePrice\": 4000,\n    \"purchaseDate\": \"1970-01-19\",\n    \"contact\": true\n}",
+					"raw": "{\n    \"name\": \"Bike Four\",\n    \"email\": \"bike4@bikes.com\",\n    \"phone\": \"123 123 123\",\n    \"model\": \"My Bike Four\",\n    \"serialNumber\": \"44444\",\n    \"purchasePrice\": 4000,\n    \"purchaseDate\": \"1970-01-19\",\n    \"contact\": true\n}",
 					"options": {
 						"raw": {
 							"language": "json"
