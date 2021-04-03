@@ -1,0 +1,82 @@
+{
+	"info": {
+		"_postman_id": "5dc6105b-0e8d-41e9-b792-de037564dd11",
+		"name": "Bike",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Bikes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/bikes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"bikes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Bike",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Bike Four\",\n    \"email\": \"bike4@bikes.com\",\n    \"phone\": \"123 123 123\",\n    \"serialNumber\": \"44444\",\n    \"purchasePrice\": 4000,\n    \"purchaseDate\": \"1970-01-19\",\n    \"contact\": true\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/bikes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"bikes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Bike",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/bikes/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"bikes",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
