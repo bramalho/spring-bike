@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { BikeService } from './services/bike.service';
 import { AdminComponent } from './components/admin/admin.component';
 import { HomeComponent } from './components/home/home.component';
+import { ViewBikeComponent } from './components/view-bike/view-bike.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -20,12 +21,14 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatButtonModule } from '@angular/material/button';
+import { MatListModule } from '@angular/material/list';
 
 @NgModule({
   declarations: [
     AppComponent,
     AdminComponent,
-    HomeComponent
+    HomeComponent,
+    ViewBikeComponent
   ],
   imports: [
     BrowserModule,
@@ -42,7 +45,8 @@ import { MatButtonModule } from '@angular/material/button';
     MatSelectModule,
     MatDatepickerModule,
     MatNativeDateModule,
-    MatButtonModule
+    MatButtonModule,
+    MatListModule
   ],
   providers: [BikeService],
   bootstrap: [AppComponent]
