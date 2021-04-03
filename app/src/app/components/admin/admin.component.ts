@@ -8,6 +8,7 @@ import { BikeService } from '../../services/bike.service';
 })
 export class AdminComponent implements OnInit {
   public bikes;
+  public displayedColumns = ['name', 'email', 'model', 'purchasePrice'];
 
   constructor(private bikeService:BikeService) { }
 
