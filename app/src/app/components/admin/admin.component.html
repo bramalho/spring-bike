@@ -1,0 +1,16 @@
+<h1>Admin</h1>
+
+<table>
+  <tr>
+    <th>Owner Name</th>
+    <th>Email</th>
+    <th>Model</th>
+    <th>Purchase Price</th>
+  </tr>
+  <tr *ngFor="let bike of bikes">
+    <td>{{bike.name}}</td>
+    <td>{{bike.email}}</td>
+    <td>{{bike.model}}</td>
+    <td>{{bike.purchasePrice}}</td>
+  </tr>
+</table>
