@@ -6,9 +6,13 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BikeService } from './services/bike.service';
+import { AuthService } from './services/auth.service';
+import { AuthGuard } from './services/auth.guard';
+
 import { AdminComponent } from './components/admin/admin.component';
 import { HomeComponent } from './components/home/home.component';
 import { ViewBikeComponent } from './components/view-bike/view-bike.component';
+import { CallbackComponent } from './components/callback/callback.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -28,7 +32,8 @@ import { MatListModule } from '@angular/material/list';
     AppComponent,
     AdminComponent,
     HomeComponent,
-    ViewBikeComponent
+    ViewBikeComponent,
+    CallbackComponent
   ],
   imports: [
     BrowserModule,
@@ -48,7 +53,11 @@ import { MatListModule } from '@angular/material/list';
     MatButtonModule,
     MatListModule
   ],
-  providers: [BikeService],
+  providers: [
+    BikeService,
+    AuthService,
+    AuthGuard
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -14,11 +14,15 @@ export class BikeService {
   constructor(private http:HttpClient) { }
 
   getBikes() {
-    return this.http.get('/server/api/v1/bikes');
+    return this.http.get('/server/api/v1/bikes', {
+      headers: new HttpHeaders({ 'Authorization': 'Bearer ' + localStorage.getItem('access_token') || '' })
+    });
   }
 
   getBike(id: number) {
-    return this.http.get('/server/api/v1/bikes/' + id);
+    return this.http.get('/server/api/v1/bikes/' + id, {
+      headers: new HttpHeaders({ 'Authorization': 'Bearer ' + localStorage.getItem('access_token') || '' })
+     });
   }
 
   createBikeRegistration(bike) {
